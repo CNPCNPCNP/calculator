@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(215, 253, 244);
+    font-family: monospace;
+    color: black;
+}
+
+#container {
+    background-color: lightgrey;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    width: 400px;
+    height: 480px;
+    border: 8px solid darkgray;
+}
+
+#display {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 76px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#clear-row {
+    display: flex;
+    height: 80px;
+}
+
+#seven-row {
+    display: flex;
+    height: 80px;
+}
+
+#four-row {
+    display: flex;
+    height: 80px;
+}
+
+#one-row {
+    display: flex;
+    height: 80px;
+}
+
+#zero-row {
+    display: flex;
+    height: 80px;
+}
+
+.operator, .operand, .clear, .zero, .decimal{
+    border: 2px solid black;
+    font-size: 60px;
+    font-family: monospace;
+    border-radius: 4px;
+}
+
+.clear {
+    width: 300px;
+    background-color: palegoldenrod;
+}
+
+.operator, .operand, .operator, .decimal{
+    width: 100px;
+    background-color: lightskyblue;
+}
+
+.operator:active, .operand:active, .operator:active, .decimal:active, .clear:active, #zero:active{
+    background-color: rgba(139, 211, 255, 0.308);
+}
+
+#zero {
+    width: 200px;
+}
+
+#zero, .operand {
+    background-color: lightslategray;
+}
