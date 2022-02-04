@@ -52,7 +52,7 @@ body {
     height: 80px;
 }
 
-.operator, .operand, .clear, .zero, .decimal{
+.operator, .operand, .clear, #zero, .decimal, #equal{
     border: 2px solid black;
     font-size: 60px;
     font-family: monospace;
@@ -69,7 +69,11 @@ body {
     background-color: lightskyblue;
 }
 
-.operator:active, .operand:active, .operator:active, .decimal:active, .clear:active, #zero:active{
+.operator:active, .operand:active, .operator:active, .decimal:active, .clear:active, #zero:active, #equal:active{
+    background-color: rgba(139, 211, 255, 0.308);
+}
+
+.operator:focus {
     background-color: rgba(139, 211, 255, 0.308);
 }
 
@@ -77,6 +81,11 @@ body {
     width: 200px;
 }
 
-#zero, .operand {
+#zero, .operand, .decimal {
     background-color: lightslategray;
+}
+
+#equal {
+    background-color: lightcoral;
+    width: 100px;
 }
